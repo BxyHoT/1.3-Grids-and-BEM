@@ -1,0 +1,308 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body {
+font-family: 'TT Lakes';
+display: flex;
+flex-direction: column;
+justify-content: center;
+overflow: auto;
+background-color: #f8f8f8;
+}
+.menu {
+  background-color: #fff;
+  border-bottom: rgba(217, 255, 245, 1) 1px solid;
+}
+.menu__body {
+  display: flex;
+  margin: 18px 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__burgermenu {
+  background-color: #fff; 
+  display: inline-block;
+  margin-right: 16px;
+}
+.menu__item {
+  display: flex;
+}
+.memu__logo {
+  display: inline-block;
+}
+.menu__dividor-container{
+  display: flex;
+  margin-right: 16px;
+}
+.memu__repair {
+  display: inline-block;
+}
+.menu__dividor{
+  width: 2px;
+  min-height: 32px;
+  background-color: rgba(234, 234, 234, 1);
+  margin: 4px 20px 4px 20px;
+  display: inline-block;
+  align-self: center;
+}
+.main {
+  background-color: #f8f8f8;
+  position: relative;
+}
+.main__title {
+  padding-top: 24px;
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  position: relative;
+  padding-left: 12px;
+}
+.main__title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  min-height: 40px;
+  position: absolute;
+  left: 0;
+  background-color: #41F6D7;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main__slide-menu {
+  display: flex;
+  overflow: auto;
+  margin: 24px 5px 0 16px;
+}
+.main__menu-item {
+  font-weight: 500;
+  line-height: 36px;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color: rgba(126, 126, 130, 1);
+  display: inline-block;
+  min-height: 40px;
+  white-space: nowrap;
+  padding: 0 16px;
+}
+.main__menu-item:focus {
+  border: rgba(184, 255, 236, 1) 2px solid;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.main__menu-item:hover {
+  border: rgba(184, 255, 236, 1) 2px solid;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.main__slide-menu::after {
+  content: '';
+  position: absolute;
+  top: 88px;
+  right: 0;
+  width: 30px;
+  min-height: 40px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #f8f8f8 65%);
+  pointer-events: none;
+}
+.main__slide-menu::before {
+  content: '';
+  position: absolute;
+  top: 88px;
+  left: -5px;
+  width: 30px;
+  min-height: 40px;
+  background: rgb(255,255,255);
+  background: linear-gradient(270deg, rgba(255,255,255,0) 0%, #f8f8f8 65%);
+  pointer-events: none;
+}
+.main__info {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+}
+.main__text {
+  font-size: 14px;
+  margin: 24px 16px 0 16px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  overflow: hidden;
+  max-height: 90px;
+}
+.main__read-more {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  background-color: #f8f8f8;
+  background:#f8f8f8 url('/img/logo/expand.svg') no-repeat 0 50%;
+  display: inline-block;
+  margin: 16px;
+}
+.main__read-more::before {
+  content: '';
+  margin-right: 26px;
+}
+.main__picture {
+  width: 100%;
+  display: inline-block;
+}
+.footer-space {
+  flex-grow: 1;
+  background-color: #f8f8f8;
+}
+.menu__item:nth-child(2){
+  display: none;
+}
+.burger-divitor {
+  display: none;
+}
+.main__text-item:nth-child(1) {
+  margin-bottom: 16px;
+}
+.main__repair {
+  display: none;
+}
+.main__checkstatus {
+  display: none;
+}
+@media (min-width:767px) {
+  .menu__body {
+    margin: 18px 24px;
+  }
+  .menu__item:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+  }
+  .menu__item:nth-child(1){
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  .menu__ic-tell{
+    margin-right: 16px;
+  }
+  .menu__ic-chat{
+    margin-right: 16px;
+  }
+  .menu__burgermenu {
+    margin-right: 0;
+  }
+  .main__text{
+    max-height: 160px;
+  }
+  .main__slide-menu{
+    margin:32px 24px;
+  }
+  .main__slide-menu::after {
+    top: 95px;
+    width: 50px;
+  }
+  .main__slide-menu::before {
+    top: 95px;
+    width: 45px;
+  }
+  .main__picture {
+    max-width: 46.875%;
+  }
+  .main__text {
+    margin: 0;
+    max-height: 160px;
+  }
+  .main__info-read {
+    max-width: 43.6%;
+  }
+  .main__text-item:nth-child(1) {
+    margin-bottom: 31px;
+  }
+  .main__info {
+    margin:32px 24px;
+    justify-content: space-between;
+  }
+  .burger-divitor {
+    display: inline-block;
+  }
+}
+@media (min-width:1120px) {
+  body {
+    align-items: center;
+  }
+  .menu {
+    display: none;
+  }
+  .main {
+    margin: 42px 0;
+    max-width: 1120px;
+  }
+  .main__title {
+    padding-top: 0;
+    flex-grow: 1;
+  }
+  .main__picture {
+  max-width: 531px;
+  }
+  .main__info-read {
+    max-width: 46%;
+  }
+  .main__info {
+    margin: 7px 25px 0 25px;
+  }
+  .main__slide-menu {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin: 8px 7px 0 25px;
+  }
+  .main__slide-menu::after {
+    content: '';
+    display: none;
+  }
+  .main__slide-menu::before {
+    content: '';
+    display: none;
+  }
+  .main__header {
+    display: flex;
+  }
+  .main__checkstatus {
+    display: inline-block;
+    margin-right: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+  }
+  .main__repair {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    margin-right: 32px;
+  }
+  .main__checkstatus::before {
+    content: 'Статус ремонта';
+    line-height: 40px;
+    margin-right: 10px;
+    color: black;
+  }
+  .main__repair::before {
+    content: 'Оставить заявку';
+    line-height: 40px;
+    margin-right: 10px;
+    color: black;
+  }
+}
