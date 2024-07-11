@@ -38,3 +38,12 @@ function readMore() {
     btn.style.margin = '24px 0 0 0';
   }
 };
+
+function onResize() {
+  items.forEach((item) => {
+    item.style.display = 'flex';
+  });
+  responseOnWindowWidth();
+}
+
+window.addEventListener('resize', onResize);
