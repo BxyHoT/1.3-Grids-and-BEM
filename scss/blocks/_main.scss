@@ -1,0 +1,207 @@
+.main {
+  position: relative;
+  @media (min-width:1120px) {
+    padding: 42px 0;
+    // max-width: 1440px;
+  }
+  &__header {
+    @media (min-width: 1120px) {
+      display: flex;
+    }
+  }
+  &__title {
+    padding-top: 24px;
+    line-height: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    position: relative;
+    padding-left: 12px;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      min-height: 40px;
+      position: absolute;
+      left: 0;
+      background-color: $color-blue-dividor;
+      border-radius: 0 5px 5px 0;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    @media (min-width: 768px) {
+      padding-left: 20px;
+    }
+    @media (min-width: 1120px) {
+      padding-top: 0;
+      padding-left: 30px;
+      flex-grow: 1;
+    }
+  }
+  &__slide-menu {
+    display: flex;
+    overflow: auto;
+    margin: 24px 5px 0 16px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 88px;
+      right: 0;
+      width: 30px;
+      min-height: 40px;
+      background: $color-white;
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $color-grey-bg 65%);
+      pointer-events: none;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 88px;
+      left: -5px;
+      width: 30px;
+      min-height: 40px;
+      background: $color-white;
+      background: linear-gradient(270deg, rgba(255,255,255,0) 0%, $color-grey-bg 65%);
+      pointer-events: none;
+    }
+    @media (min-width: 768px) {
+      margin:32px 24px;
+      &::after {
+        top: 95px;
+        width: 50px;
+      }
+      &::before {
+        top: 95px;
+        width: 45px;
+      }
+    }
+    @media (min-width: 1120px) {
+      display: flex;
+      flex: 1 1 auto;
+      flex-wrap: wrap;
+      overflow: auto;
+      margin: 8px 7px 0 25px;
+      &::after, &::before {
+        content: '';
+        display: none;
+      }
+    }
+  }
+  &__menu-item {
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -0.2px;
+    color: $color-gray-main;
+    display: inline-block;
+    min-height: 40px;
+    white-space: nowrap;
+    padding: 0 16px;
+    border: $color-grey-bg 2px solid;
+    border-radius: 6px;
+    &:focus, &:hover {
+      border: $color-blue-focus 2px solid;
+      border-radius: 6px;
+      background-color: #fff;
+    }
+  }
+  &__info {
+    display: block;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      display: block;
+      padding: 32px 24px;
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+  }
+  &__text-item {
+    padding: 24px 16px 0px 16px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+    &:nth-child(2){
+      display: inline-block;
+      @media (min-width: 768px) {
+        display: inline-block;
+        max-width: 40%;
+      }
+    }
+    &:nth-child(3){
+      display: none;
+      @media (min-width: 768px) {
+        display: inline-block;
+        max-width: 40%;
+        max-height: 36px;
+        overflow: hidden;
+      }
+      @media (min-width: 1120px) {
+        max-height: initial;
+      }
+    }
+  }
+  &__wrap {
+    display: none;
+    @media (min-width: 768px) {
+      display: inline;
+    }
+  }
+  &__picture {
+    order: 1;
+    width: 100%;
+    display: block;
+    margin-bottom: 24px;
+    @media (min-width: 768px){
+      float: right;
+      order: 0;
+      width: 50%;
+      margin-left: 48px;
+    }
+    @media (min-width: 1120px) {
+      margin-left: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  &__read-more {
+    align-self: flex-start;
+  }
+  &__checkstatus {
+    display: none;
+    @media (min-width:1120px) {
+      display: inline-block;
+      margin-right: 32px;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+      font-size: 16px;
+      &::before {
+        content: 'Статус ремонта';
+        line-height: 40px;
+        margin-right: 10px;
+        color: $color-black-main;
+      }
+    }
+  }
+  &__repair {
+    display: none;
+    @media (min-width:1120px) {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.2px;
+      margin-right: 32px;
+      &::before {
+        content: 'Оставить заявку';
+        line-height: 40px;
+        margin-right: 10px;
+        color: $color-black-main;
+      }
+    }
+  }
+}

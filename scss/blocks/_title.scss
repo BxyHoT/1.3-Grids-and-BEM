@@ -1,0 +1,15 @@
+.title {
+  padding: 16px;
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $color-gray-main;
+  border-top: $color-blue-line 1px solid;
+  @media (min-width:768px) {
+    padding: 16px 24px;
+  }
+  @media (min-width:1120px) {
+    padding: 16px 32px;
+  }
+}

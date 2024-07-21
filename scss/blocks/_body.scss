@@ -1,0 +1,10 @@
+body {
+  font-family: 'TT Lakes';
+  color: $color-black-main;
+  background-color: $color-grey-bg;
+  font-size: 16px;
+  position: relative;
+  @media (min-width:1120px) {
+    padding-left: 320px;
+  }
+}

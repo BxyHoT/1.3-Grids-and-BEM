@@ -1,0 +1,47 @@
+.swiper-container {
+  padding: 16px 0 16px 16px;
+  height: 132px;
+  position: relative;
+  &::part(bullet-active) {
+    background-color: rgba(181, 182, 188, 1);
+    height: 12px;
+    width: 12px;
+  }
+  &::part(bullet) {
+    background-color: rgba(221, 221, 221, 1);
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+  }
+  &::part(pagination) {
+    bottom: 0px;
+    line-height: 12px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 80px;
+    right: 0px;
+    top: 10px;
+    z-index: 1;
+    background: linear-gradient(270deg, $color-white 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+};
+.swiper-slide {
+  width: 240px;
+  height: 72px;
+  padding: 16px;
+  background-color: $color-white;
+  border: 1px solid $color-grey-dividor;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  & img {
+    max-width: 128px;
+    object-fit: contain;
+  }
+};

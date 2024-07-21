@@ -1,0 +1,59 @@
+.menu {
+  border-bottom: $color-blue-line 1px solid;
+  padding: 18px 16px;
+  background-color: $color-white;
+  @media (min-width:768px) {
+    padding: 18px 24px;
+  };
+  @media (min-width:1120px) {
+    display: none;
+  };
+  &__body {
+    justify-content: space-between;
+    align-items: center;
+  };
+  &__dividor-container, &__item, &__body {
+    display: flex;
+  };
+  &__ic-tell, &__ic-chat, &__burgermenu, &__dividor-container {
+    margin-right: 16px;
+  };
+  &__logo, &__burgermenu, &__dividor {
+    display: inline-block;
+  };
+  &__item {
+    &:nth-child(2){
+      display: none;
+    }
+    @media (min-width:768px) {
+      &:nth-child(2) {
+        display: flex;
+        justify-content: flex-start;
+      };
+      &:nth-child(1) {
+        display: flex;
+        flex-grow: 1;
+        margin-right: 20px;
+      };
+    }
+  }
+  &__dividor {
+    width: 2px;
+    min-height: 32px;
+    background-color: $color-grey-dividor;
+    margin: 4px 20px 4px 20px;
+    align-self: center;
+  };
+  &__burgermenu {
+    background-color: $color-white; 
+    @media (min-width:768px) {
+        margin-right: 0;
+    }
+  };
+  &__dividor_hidden {
+    display: none;
+    @media (min-width:768px) {
+      display: block;
+    }
+  };
+};

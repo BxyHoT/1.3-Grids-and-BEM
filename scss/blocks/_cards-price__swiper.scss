@@ -1,0 +1,21 @@
+.cards-price__swiper-container {
+  height: 260px;
+  &::after {
+    content: '';
+    height: 210px;
+  }
+}
+.cards-price__swiper-slide {
+  border: none;
+  flex-direction: column;
+  height: 200px;
+  width: 260px;
+}
+.cards-price__text_swiper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  & a {
+    align-self: center;
+  }
+}

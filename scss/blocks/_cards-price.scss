@@ -1,0 +1,77 @@
+.cards-price {
+  &__container {
+    max-width: initial;
+  }
+  &__main {
+    flex-direction: column;
+    gap: 0;
+  }
+  &__item {
+    display: flex;
+    border: none;
+    border-radius: 0;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 95%;
+      height: 1px;
+      top: 62px;
+      background-color: $color-grey-bg;
+    }
+    &:nth-child(1) {
+      background: initial;
+      color: $color-gray-main;
+      flex-grow: 0;
+    }
+    &:nth-child(2) {
+      border-radius: 5px 5px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 5px 5px;
+      &::after {
+        content: '';
+        display: none;
+      }
+    }
+    & p {
+      &:nth-child(1) {
+        width: 50%;
+      }
+      &:nth-child(2) {
+        width: 15%;
+      }
+      &:nth-child(3) {
+        width: 15%;
+        flex-grow: 1;
+      }
+      &:nth-child(4) {
+        width: 20%;
+      }
+    }
+  }
+  &__footer {
+    padding: 0 24px;
+    max-width: 502px;
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+  &__text-footer {
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    margin-bottom: 16px;
+  }
+  &__link-footer {
+    font-size: 16px;
+    font-weight: 500;
+    & img {
+      position: relative;
+      left: 5px;
+      top: 3px;
+    }
+  }
+}

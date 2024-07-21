@@ -1,0 +1,21 @@
+.botton-pink {
+  width: 119px;
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-pinc-main;
+  border-radius: 16px;
+  padding-left: 12px;
+  color: $color-white;
+  font-size: 12px;
+  letter-spacing: -0.15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.botton-pink_big {
+  width: 136px;
+  & img {
+    align-self: center;
+  }
+}

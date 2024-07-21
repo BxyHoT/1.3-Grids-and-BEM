@@ -1,0 +1,13 @@
+.cards-tech__swiper-container {
+  height: 220px;
+  &::after {
+    content: '';
+    height: 175px;
+  }
+}
+.cards-tech__swiper-slide {
+  height: 160px;
+  & a {
+    align-self: flex-end;
+  }
+}

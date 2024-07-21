@@ -1,0 +1,23 @@
+.hidden {
+  display: none;
+}
+button {
+  transition: 0.2s ease 0.1s;
+  @media (hover: hover) {
+    &:hover {
+      filter: grayscale(100%) opacity(70%);
+      transition-delay: 0s;
+    }
+  }
+}
+a {
+  transition: 0.2s ease-in-out;
+  @media (hover: hover) {
+    &:hover {
+      filter: grayscale(100%) opacity(70%);
+    }
+  }
+}
+.pink {
+  color: $color-pinc-main;
+}

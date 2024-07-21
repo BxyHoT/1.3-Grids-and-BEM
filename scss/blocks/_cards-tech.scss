@@ -1,0 +1,8 @@
+.cards-tech {
+  &__item {
+    height: 160px;
+    & a {
+      align-self: flex-end;
+    }
+  }
+}

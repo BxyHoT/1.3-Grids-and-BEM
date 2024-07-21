@@ -1,0 +1,83 @@
+.modal {
+  height: 100%;
+  background: $color-white;
+  z-index: 12;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  transition: 0.5s ease;
+  @media (min-width: 768px) {
+    border-left: 1px solid $color-blue-line;
+  }
+  &__body {
+    padding: 24px 16px;
+    width: 100vw;
+    @media (min-width: 440px) {
+      width: 440px;
+    }
+    @media (min-width: 768px) {
+      width: 440px;
+      padding: 40px 32px;
+    }
+  }
+  &__back {
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+      position: absolute;
+      left: -64px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    line-height: 40px;
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 24px;
+    &::before {
+      content: '';
+      background-color: $color-blue-dividor;
+      height: 40px;
+      width: 4px;
+      border-radius: 0 4px 4px 0;
+      position: absolute;
+      left: -16px;
+      @media (min-width: 768px) {
+        left: -32px;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    margin-bottom: 16px;
+    line-height: 18px;
+    & input, textarea {
+      height: 48px;
+      width: 100%;
+      border: 1px solid $color-grey-dividor;
+      border-radius: 7px;
+      padding-left: 16px;
+      &::placeholder {
+        color: rgba(181, 182, 188, 1);
+      }
+    }
+  }
+  &__item_big {
+    & textarea {
+      height: 118px;
+      padding: 16px;
+    }
+  }
+  &__text {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__btn {
+    align-self: flex-end;
+    margin-bottom: 50px;
+  }
+}
