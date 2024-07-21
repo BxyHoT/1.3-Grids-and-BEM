@@ -6,7 +6,7 @@
   letter-spacing: -0.2px;
   color: $color-gray-main;
   border-top: $color-blue-line 1px solid;
-  @media (min-width:768px) {
+  @media (min-width:768px), (orientation: landscape) {
     padding: 16px 24px;
   }
   @media (min-width:1120px) {

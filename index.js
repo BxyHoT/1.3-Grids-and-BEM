@@ -164,7 +164,7 @@ function closeMenu() {
 };
 
 function offSwiper() {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 768 && window.innerWidth > window.innerHeight) {
     const swipers = document.querySelectorAll('.swiper-contsiner');
     swipers.forEach((item) => {
       item.setAttribute('init', 'false');

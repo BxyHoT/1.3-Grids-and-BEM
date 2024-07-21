@@ -56,7 +56,7 @@
     padding: 0 24px;
     max-width: 502px;
     margin-bottom: 40px;
-    @media (min-width: 768px) {
+    @media (min-width: 768px), (orientation: landscape) {
       margin-bottom: 50px;
     }
   }

@@ -15,14 +15,14 @@
     @media (min-width: 440px) {
       width: 440px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 768px), (orientation: landscape) {
       width: 440px;
       padding: 40px 32px;
     }
   }
   &__back {
     margin-bottom: 40px;
-    @media (min-width: 768px) {
+    @media (min-width: 768px), (orientation: landscape) {
       position: absolute;
       left: -64px;
     }
@@ -42,7 +42,7 @@
       border-radius: 0 4px 4px 0;
       position: absolute;
       left: -16px;
-      @media (min-width: 768px) {
+      @media (min-width: 768px), (orientation: landscape) {
         left: -32px;
       }
     }

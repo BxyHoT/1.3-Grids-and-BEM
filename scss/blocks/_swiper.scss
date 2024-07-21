@@ -27,7 +27,7 @@
     z-index: 1;
     background: linear-gradient(270deg, $color-white 16.84%, rgba(248, 248, 248, 0.0001) 100%);
   }
-  @media (min-width: 768px) {
+  @media (min-width: 768px), (orientation: landscape) {
     display: none;
   }
 };

@@ -614,6 +614,11 @@ a {
     display: block;
   }
 }
+@media (min-width: 1350px) {
+  .cards__container {
+    max-width: 1016px;
+  }
+}
 @media (min-width: 1440px) {
   .cards__container {
     padding: 24px 32px;
@@ -624,7 +629,6 @@ a {
   display: flex;
   gap: 16px 24px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 @media (min-width: 1440px) {
   .cards__main {

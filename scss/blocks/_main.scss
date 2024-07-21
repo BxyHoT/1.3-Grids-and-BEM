@@ -28,7 +28,7 @@
       border-radius: 0 5px 5px 0;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
-    @media (min-width: 768px) {
+    @media (min-width: 768px), (orientation: landscape) {
       padding-left: 20px;
     }
     @media (min-width: 1120px) {
@@ -63,7 +63,7 @@
       background: linear-gradient(270deg, rgba(255,255,255,0) 0%, $color-grey-bg 65%);
       pointer-events: none;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 768px), (orientation: landscape) {
       margin:32px 24px;
       &::after {
         top: 95px;
@@ -109,7 +109,7 @@
   &__text {
     display: flex;
     flex-direction: column;
-    @media (min-width: 768px) {
+    @media (min-width: 768px), (orientation: landscape) {
       display: block;
       padding: 32px 24px;
       &::after {
@@ -124,7 +124,7 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    @media (min-width: 768px) {
+    @media (min-width: 768px), (orientation: landscape) {
       padding: 0;
     }
     &:nth-child(2){
@@ -136,7 +136,7 @@
     }
     &:nth-child(3){
       display: none;
-      @media (min-width: 768px) {
+      @media (min-width: 768px), (orientation: landscape) {
         display: inline-block;
         max-width: 40%;
         max-height: 36px;
@@ -149,7 +149,7 @@
   }
   &__wrap {
     display: none;
-    @media (min-width: 768px) {
+    @media (min-width: 768px), (orientation: landscape) {
       display: inline;
     }
   }
@@ -158,7 +158,7 @@
     width: 100%;
     display: block;
     margin-bottom: 24px;
-    @media (min-width: 768px){
+    @media (min-width: 768px), (orientation: landscape){
       float: right;
       order: 0;
       width: 50%;

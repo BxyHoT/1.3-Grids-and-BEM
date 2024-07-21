@@ -9,7 +9,7 @@
   @media (min-width: 360px) {
     left: -360px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 768px), (orientation: landscape) {
     left: -320px;
   }
   @media (min-width: 1120px) {
@@ -27,7 +27,7 @@
       padding: 24px;
       max-width: 360px;
     }
-    @media (min-width: 768px){
+    @media (min-width: 768px), (orientation: landscape){
       padding: 24px;
       width: 320px;
     }
@@ -63,7 +63,7 @@
     position: relative;
     flex-wrap: 1;
     transition: 0.3s ease-in-out;
-    @media (min-width: 768px) {
+    @media (min-width: 768px), (orientation: landscape) {
       margin-top: 32px;
     }
     &:nth-child(1) {
@@ -132,7 +132,7 @@
       line-height: 24px;
       letter-spacing: -0.2px;
       margin-top: 8px;
-      @media (min-width: 768px) {
+      @media (min-width: 768px), (orientation: landscape) {
         margin-top: 40px;
       }
     }

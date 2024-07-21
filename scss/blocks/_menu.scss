@@ -2,7 +2,7 @@
   border-bottom: $color-blue-line 1px solid;
   padding: 18px 16px;
   background-color: $color-white;
-  @media (min-width:768px) {
+  @media (min-width:768px), (orientation: landscape) {
     padding: 18px 24px;
   };
   @media (min-width:1120px) {
@@ -25,7 +25,7 @@
     &:nth-child(2){
       display: none;
     }
-    @media (min-width:768px) {
+    @media (min-width:768px), (orientation: landscape) {
       &:nth-child(2) {
         display: flex;
         justify-content: flex-start;
@@ -46,13 +46,13 @@
   };
   &__burgermenu {
     background-color: $color-white; 
-    @media (min-width:768px) {
+    @media (min-width:768px), (orientation: landscape) {
         margin-right: 0;
     }
   };
   &__dividor_hidden {
     display: none;
-    @media (min-width:768px) {
+    @media (min-width:768px), (orientation: landscape) {
       display: block;
     }
   };
