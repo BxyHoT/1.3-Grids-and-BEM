@@ -17,7 +17,7 @@ body {
   padding: 18px 16px;
   background-color: rgb(255, 255, 255);
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .menu {
     padding: 18px 24px;
   }
@@ -43,7 +43,7 @@ body {
 .menu__item:nth-child(2) {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .menu__item:nth-child(2) {
     display: flex;
     justify-content: flex-start;
@@ -64,7 +64,7 @@ body {
 .menu__burgermenu {
   background-color: rgb(255, 255, 255);
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .menu__burgermenu {
     margin-right: 0;
   }
@@ -72,7 +72,7 @@ body {
 .menu__dividor_hidden {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .menu__dividor_hidden {
     display: block;
   }
@@ -115,7 +115,7 @@ body {
   border-radius: 0 5px 5px 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .main__title {
     padding-left: 20px;
   }
@@ -154,7 +154,7 @@ body {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(248, 248, 248) 65%);
   pointer-events: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .main__slide-menu {
     margin: 32px 24px;
   }
@@ -204,7 +204,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .main__text {
     display: block;
     padding: 32px 24px;
@@ -221,7 +221,7 @@ body {
   line-height: 18px;
   letter-spacing: 0.2px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .main__text-item {
     padding: 0;
   }
@@ -238,7 +238,7 @@ body {
 .main__text-item:nth-child(3) {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .main__text-item:nth-child(3) {
     display: inline-block;
     max-width: 40%;
@@ -254,7 +254,7 @@ body {
 .main__wrap {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .main__wrap {
     display: inline;
   }
@@ -265,7 +265,7 @@ body {
   display: block;
   margin-bottom: 24px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .main__picture {
     float: right;
     order: 0;
@@ -323,7 +323,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.2px;
-  background: url("/img/logo/expand.svg") no-repeat 0 50%;
+  background: url("img/logo/expand.svg") no-repeat 0 50%;
   display: inline-block;
   margin: 16px;
 }
@@ -373,7 +373,7 @@ a {
     left: -360px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .burger-menu {
     left: -320px;
   }
@@ -398,7 +398,7 @@ a {
     max-width: 360px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .burger-menu__body {
     padding: 24px;
     width: 320px;
@@ -440,7 +440,7 @@ a {
   flex-wrap: 1;
   transition: 0.3s ease-in-out;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .burger-menu__item {
     margin-top: 32px;
   }
@@ -514,7 +514,7 @@ a {
   letter-spacing: -0.2px;
   margin-top: 8px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .burger-menu__element:nth-child(4) {
     margin-top: 40px;
   }
@@ -532,7 +532,7 @@ a {
   color: rgb(126, 126, 130);
   border-top: rgb(217, 255, 245) 1px solid;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .title {
     padding: 16px 24px;
   }
@@ -581,7 +581,7 @@ a {
   z-index: 1;
   background: linear-gradient(270deg, rgb(255, 255, 255) 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .swiper-container {
     display: none;
   }
@@ -609,7 +609,7 @@ a {
   padding: 24px;
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .cards__container {
     display: block;
   }
@@ -658,7 +658,7 @@ a {
 .cards__read-more {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .cards__read-more {
     display: inline-block;
     margin: 24px 0 0 0;
@@ -776,7 +776,7 @@ a {
   max-width: 502px;
   margin-bottom: 40px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .cards-price__footer {
     margin-bottom: 50px;
   }
@@ -805,7 +805,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .footer__container {
     padding: 24px;
     flex-direction: row;
@@ -863,7 +863,7 @@ a {
     width: 440px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .modal__body {
     width: 440px;
     padding: 40px 32px;
@@ -872,7 +872,7 @@ a {
 .modal__back {
   margin-bottom: 40px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .modal__back {
     position: absolute;
     left: -64px;
@@ -895,7 +895,7 @@ a {
   position: absolute;
   left: -16px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (orientation: landscape) {
   .modal__title::before {
     left: -32px;
   }
