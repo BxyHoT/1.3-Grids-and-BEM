@@ -163,17 +163,6 @@ function closeMenu() {
   document.querySelector('.burger-menu__body').style.boxShadow = 'none';
 };
 
-function offSwiper() {
-  if (window.innerWidth > 768 && window.innerWidth > window.innerHeight) {
-    const swipers = document.querySelectorAll('.swiper-contsiner');
-    swipers.forEach((item) => {
-      item.setAttribute('init', 'false');
-    })
-  }
-};
-
-offSwiper();
-
 const message = document.querySelector('.menu__ic-chat');
 const message2 = document.querySelectorAll('.menu__ic-chat')[1];
 const modalChat = document.querySelector('.modal-feedback');
