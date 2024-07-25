@@ -11,408 +11,410 @@
 </head>
 
 <body>
-  <div class="blur"></div>
-  <div class="blur blur_modal"></div>
-  <div class="container">
-    <nav class="burger-menu">
-      <div class="burger-menu__body">
-        <div class="burger-menu__header">
-          <button class="burger-menu__back"><img src="img/logo/burger-back.svg" alt="Кнопка назад"></button>
-          <a href="#" class="burger-menu__logo logo"><img src="img/logo/logotup.svg" alt="Логотип"></a>
-          <button class="burger-menu__search"><img src="img/logo/search.svg" alt="Поиск"></button>
+
+  <body>
+    <div class="blur"></div>
+    <div class="blur blur_modal"></div>
+    <div class="container">
+      <nav class="burger-menu">
+        <div class="burger-menu__body">
+          <div class="burger-menu__header">
+            <button class="burger-menu__back"><img src="img/logo/burger-back.svg" alt="Кнопка назад"></button>
+            <a href="#" class="burger-menu__logo logo"><img src="img/logo/logotup.svg" alt="Логотип"></a>
+            <button class="burger-menu__search"><img src="img/logo/search.svg" alt="Поиск"></button>
+          </div>
+          <div class="burger-menu__main">
+            <a href="#" class="burger-menu__item">Ремонт техники</a>
+            <a href="#" class="burger-menu__item">Услуги и сервисы</a>
+            <a href="#" class="burger-menu__item">Корпоративным клиентам</a>
+            <a href="#" class="burger-menu__item">Продавцам техники</a>
+            <a href="#" class="burger-menu__item">Партнерам</a>
+            <a href="#" class="burger-menu__item">Производителям</a>
+            <a href="#" class="burger-menu__item">Наши сервисные центры</a>
+            <a href="#" class="burger-menu__item">Контакты</a>
+          </div>
+          <div class="burger-menu__footer">
+            <div class="burger-menu__element contact-button">
+              <button type="button" class="menu__ic-tell"><img src="img/logo/call.svg" alt="Телефон"></button>
+              <button type="button" class="menu__ic-chat"><img src="img/logo/chat.svg" alt="Чат"></button>
+              <button type="button" class="menu__ic-profile"><img src="img/logo/profile.svg" alt="Профиль"></button>
+            </div>
+            <a href="mailto:mail@cps.com" class="burger-menu__element">mail@cps.com</a>
+            <a href="tel:88008908900" class="burger-menu__element">8 800 890 8900</a>
+            <div class="burger-menu__element">
+              <button type="button" class="burger-menu__lang">RU</button>
+              <button type="button" class="burger-menu__lang">EN</button>
+              <button type="button" class="burger-menu__lang">CH</button>
+            </div>
+          </div>
         </div>
-        <div class="burger-menu__main">
-          <a href="#" class="burger-menu__item">Ремонт техники</a>
-          <a href="#" class="burger-menu__item">Услуги и сервисы</a>
-          <a href="#" class="burger-menu__item">Корпоративным клиентам</a>
-          <a href="#" class="burger-menu__item">Продавцам техники</a>
-          <a href="#" class="burger-menu__item">Партнерам</a>
-          <a href="#" class="burger-menu__item">Производителям</a>
-          <a href="#" class="burger-menu__item">Наши сервисные центры</a>
-          <a href="#" class="burger-menu__item">Контакты</a>
-        </div>
-        <div class="burger-menu__footer">
-          <div class="burger-menu__element contact-button">
+      </nav>
+      <header class="menu">
+        <div class="menu__body">
+          <div class="menu__item">
+            <button type="button" class="menu__burgermenu"><img src="img/logo/burger.svg" alt="Меню бургер"></button>
+            <div class="menu__dividor menu__dividor_hidden"></div>
+            <a href="#" class="menu__logo logo"><img src="img/logo/logotup.svg" alt="Логотип"></a>
+          </div>
+          <div class="menu__item contact-button">
             <button type="button" class="menu__ic-tell"><img src="img/logo/call.svg" alt="Телефон"></button>
             <button type="button" class="menu__ic-chat"><img src="img/logo/chat.svg" alt="Чат"></button>
             <button type="button" class="menu__ic-profile"><img src="img/logo/profile.svg" alt="Профиль"></button>
           </div>
-          <a href="mailto:mail@cps.com" class="burger-menu__element">mail@cps.com</a>
-          <a href="tel:88008908900" class="burger-menu__element">8 800 890 8900</a>
-          <div class="burger-menu__element">
-            <button type="button" class="burger-menu__lang">RU</button>
-            <button type="button" class="burger-menu__lang">EN</button>
-            <button type="button" class="burger-menu__lang">CH</button>
+          <div class="menu__item">
+            <div class="menu__dividor-container">
+              <div class="menu__dividor"></div>
+              <button type="button" class="memu__repair"><img src="img/logo/repair.svg" alt="Ремонт"></button>
+            </div>
+            <button type="button" class="memu__checkstatus"><img src="img/logo/checkstatus.svg" alt="Проверка статуса"></button>
           </div>
         </div>
-      </div>
-    </nav>
-    <header class="menu">
-      <div class="menu__body">
-        <div class="menu__item">
-          <button type="button" class="menu__burgermenu"><img src="img/logo/burger.svg" alt="Меню бургер"></button>
-          <div class="menu__dividor menu__dividor_hidden"></div>
-          <a href="#" class="menu__logo logo"><img src="img/logo/logotup.svg" alt="Логотип"></a>
+        <div class="blur"></div>
+      </header>
+      <section class="modal-feedback modal">
+        <div class="modal-feedback__body modal__body">
+          <button class="modal-feedback__back modal__back"><img src="img/logo/burger-back.svg" alt="Назад"></button>
+          <h2 class="modal-feedback__title modal__title">Обратная связь</h2>
+          <form action="#" method="post" class="modal-feedback__form modal__form">
+            <div class="modal-feedback__item modal__item"><input type="text" name="Имя" id="" placeholder="Имя"></div>
+            <div class="modal-feedback__item modal__item"><input type="tel" name="Телефон" id="" placeholder="Телефон"></div>
+            <div class="modal-feedback__item modal__item"><input type="email" name="Электронная почта" id="" placeholder="Электронная почта"></div>
+            <div class="modal-feedback__item modal__item modal__item_big"><textarea name="Сообщение" id="" placeholder="Сообщение"></textarea></div>
+            <p class="modal-feedbck__text modal__text">Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
+            <div class="modal-feedback__btn modal__btn"><button type="submit" class="botton-pink botton-pink_big">Отправить<img src="img/logo/goside.svg" alt="Отправить"></button></div>
+          </form>
         </div>
-        <div class="menu__item contact-button">
-          <button type="button" class="menu__ic-tell"><img src="img/logo/call.svg" alt="Телефон"></button>
-          <button type="button" class="menu__ic-chat"><img src="img/logo/chat.svg" alt="Чат"></button>
-          <button type="button" class="menu__ic-profile"><img src="img/logo/profile.svg" alt="Профиль"></button>
+      </section>
+      <section class="modal-tell modal">
+        <div class="modal-tell__body modal__body">
+          <button class="modal-tell__back modal__back"><img src="img/logo/burger-back.svg" alt="Назад"></button>
+          <h2 class="modal-tell__title modal__title">Заказать звонок</h2>
+          <form action="#" method="post" class="modal-tell__form modal__form">
+            <div class="modal-tell__item modal__item"><input type="tel" name="Телефон" id="" placeholder="Телефон"></div>
+            <p class="modal-tell__text modal__text">Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
+            <div class="modal-tell__btn modal__btn"><button type="submit" class="botton-pink botton-pink_big">Отправить<img src="img/logo/goside.svg" alt="Отправить"></button></div>
+          </form>
         </div>
-        <div class="menu__item">
-          <div class="menu__dividor-container">
-            <div class="menu__dividor"></div>
-            <button type="button" class="memu__repair"><img src="img/logo/repair.svg" alt="Ремонт"></button>
+      </section>
+      <section class="main">
+        <div class="main__header">
+          <h1 class="main__title">Услуги и сервисы</h1>
+          <button type="button" class="main__repair"><img src="img/logo/repair.svg" alt="Ремонт"></button>
+          <button type="button" class="main__checkstatus"><img src="img/logo/checkstatus.svg" alt="Проверка статуса"></button>
+        </div>
+        <div class="main__slide-menu">
+          <a href="#" class="main__menu-item">Ремонтируемые устройства</a>
+          <a href="#" class="main__menu-item">Ремонтируемые бренды</a>
+          <a href="#" class="main__menu-item">Цены на услуги</a>
+          <a href="#" class="main__menu-item">Адреса сервисных центров</a>
+          <a href="#" class="main__menu-item">Специальные цены</a>
+          <a href="#" class="main__menu-item">Отзывы</a>
+        </div>
+        <div class="main__info">
+          <div class="main__info-body">
+            <p class="main__text"><img src="img/mainLogo.jpg" alt="Какая-то картинка с каим-то контентом" class="main__picture">
+              <span class="main__text-item">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br class="main__wrap"><br class="main__wrap"></span>
+              <span class="main__text-item"> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.<br></span>
+              <span class="main__text-item hidden"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur incidunt quae quos. Assumenda excepturi perferendis, minima amet aliquid doloremque mollitia omnis facilis eos quas corrupti cupiditate veritatis adipisci esse illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi odio aperiam magnam error corporis quaerat deleniti fugiat vitae accusantium minima. Expedita aliquid inventore voluptatem quas ab corrupti facilis, reprehenderit molestiae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quis suscipit sed, placeat delectus repellat molestias pariatur nemo ipsam explicabo sunt repudiandae labore eveniet facere voluptate! Natus rerum cum assumenda. <br></span>
+              <button type="button" class="main__read-more read-more">Читать далее</button>
+            </p>
           </div>
-          <button type="button" class="memu__checkstatus"><img src="img/logo/checkstatus.svg" alt="Проверка статуса"></button>
         </div>
-      </div>
-      <div class="blur"></div>
-    </header>
-    <section class="modal-feedback modal">
-      <div class="modal-feedback__body modal__body">
-        <button class="modal-feedback__back modal__back"><img src="img/logo/burger-back.svg" alt="Назад"></button>
-        <h2 class="modal-feedback__title modal__title">Обратная связь</h2>
-        <form action="#" method="post" class="modal-feedback__form modal__form">
-          <div class="modal-feedback__item modal__item"><input type="text" name="Имя" id="" placeholder="Имя"></div>
-          <div class="modal-feedback__item modal__item"><input type="tel" name="Телефон" id="" placeholder="Телефон"></div>
-          <div class="modal-feedback__item modal__item"><input type="email" name="Электронная почта" id="" placeholder="Электронная почта"></div>
-          <div class="modal-feedback__item modal__item modal__item_big"><textarea name="Сообщение" id="" placeholder="Сообщение"></textarea></div>
-          <p class="modal-feedbck__text modal__text">Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
-          <div class="modal-feedback__btn modal__btn"><button type="submit" class="botton-pink botton-pink_big">Отправить<img src="img/logo/goside.svg" alt="Отправить"></button></div>
-        </form>
-      </div>
-    </section>
-    <section class="modal-tell modal">
-      <div class="modal-tell__body modal__body">
-        <button class="modal-tell__back modal__back"><img src="img/logo/burger-back.svg" alt="Назад"></button>
-        <h2 class="modal-tell__title modal__title">Заказать звонок</h2>
-        <form action="#" method="post" class="modal-tell__form modal__form">
-          <div class="modal-tell__item modal__item"><input type="tel" name="Телефон" id="" placeholder="Телефон"></div>
-          <p class="modal-tell__text modal__text">Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
-          <div class="modal-tell__btn modal__btn"><button type="submit" class="botton-pink botton-pink_big">Отправить<img src="img/logo/goside.svg" alt="Отправить"></button></div>
-        </form>
-      </div>
-    </section>
-    <section class="main">
-      <div class="main__header">
-        <h1 class="main__title">Услуги и сервисы</h1>
-        <button type="button" class="main__repair"><img src="img/logo/repair.svg" alt="Ремонт"></button>
-        <button type="button" class="main__checkstatus"><img src="img/logo/checkstatus.svg" alt="Проверка статуса"></button>
-      </div>
-      <div class="main__slide-menu">
-        <a href="#" class="main__menu-item">Ремонтируемые устройства</a>
-        <a href="#" class="main__menu-item">Ремонтируемые бренды</a>
-        <a href="#" class="main__menu-item">Цены на услуги</a>
-        <a href="#" class="main__menu-item">Адреса сервисных центров</a>
-        <a href="#" class="main__menu-item">Специальные цены</a>
-        <a href="#" class="main__menu-item">Отзывы</a>
-      </div>
-      <div class="main__info">
-        <div class="main__info-body">
-          <p class="main__text"><img src="img/mainLogo.jpg" alt="Какая-то картинка с каим-то контентом" class="main__picture">
-            <span class="main__text-item">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br class="main__wrap"><br class="main__wrap"></span>
-            <span class="main__text-item"> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.<br></span>
-            <span class="main__text-item hidden"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur incidunt quae quos. Assumenda excepturi perferendis, minima amet aliquid doloremque mollitia omnis facilis eos quas corrupti cupiditate veritatis adipisci esse illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi odio aperiam magnam error corporis quaerat deleniti fugiat vitae accusantium minima. Expedita aliquid inventore voluptatem quas ab corrupti facilis, reprehenderit molestiae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quis suscipit sed, placeat delectus repellat molestias pariatur nemo ipsam explicabo sunt repudiandae labore eveniet facere voluptate! Natus rerum cum assumenda. <br></span>
-            <button type="button" class="main__read-more read-more">Читать далее</button>
-          </p>
+      </section>
+      <section class="cards-brends cards">
+        <h2 class="cards-brends__title title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+        <div class="cards-brends__container cards__container">
+          <div class="cards-brends__main cards__main">
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/lenovo.png" alt="Леново">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/samsung.png" alt="Самсунг">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt=""></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/apple.png" alt="Яблоко">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/viewsonic.png" alt="Вьюсоник">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/bosch.png" alt="Бош">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/hp.png" alt="Хп">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/aser.png" alt="Асер">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/sony.png" alt="Сони">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/lenovo.png" alt="Леново">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/samsung.png" alt="Самсунг">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt=""></a>
+            </div>
+            <div class="cards-brends__item cards__item">
+              <img src="img/brends/apple.png" alt="Яблоко">
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+          </div>
+          <button type="button" class="cards-brends__read-more read-more">Показать все</button>
         </div>
-      </div>
-    </section>
-    <section class="cards-brends cards">
-      <h2 class="cards-brends__title title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
-      <div class="cards-brends__container cards__container">
-        <div class="cards-brends__main cards__main">
-          <div class="cards-brends__item cards__item">
+        <swiper-container slides-per-view="auto" pagination="true" loop="true" space-between="16" class="cards-brends__swiper-container swiper-container">
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/lenovo.png" alt="Леново">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/samsung.png" alt="Самсунг">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt=""></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/apple.png" alt="Яблоко">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/viewsonic.png" alt="Вьюсоник">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/bosch.png" alt="Бош">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/hp.png" alt="Хп">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/aser.png" alt="Асер">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/sony.png" alt="Сони">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/lenovo.png" alt="Леново">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/samsung.png" alt="Самсунг">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt=""></a>
-          </div>
-          <div class="cards-brends__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-brends__swiper-slide swiper-slide">
             <img src="img/brends/apple.png" alt="Яблоко">
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+          </swiper-slide>
+        </swiper-container>
+      </section>
+      <section class="cards-tech cards">
+        <h2 class="cards-tech__title title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+        <div class="cards-tech__container cards__container">
+          <div class="cards-tech__main cards__main">
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт ноутбуков</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт планшетов</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт ПК</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт мониторов</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт чего-то</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт чего-то</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт чего-то</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт чего-то</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт чего-то</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт чего-то</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
+            <div class="cards-tech__item cards__item">
+              <p class="cards-tech__text cards__text">Ремонт чего-то</p>
+              <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+            </div>
           </div>
+          <button type="button" class="cards-tech__read-more read-more">Показать все</button>
         </div>
-        <button type="button" class="cards-brends__read-more read-more">Показать все</button>
-      </div>
-      <swiper-container slides-per-view="auto" pagination="true" loop="true" space-between="16" class="cards-brends__swiper-container swiper-container">
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/lenovo.png" alt="Леново">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/samsung.png" alt="Самсунг">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt=""></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/apple.png" alt="Яблоко">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/viewsonic.png" alt="Вьюсоник">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/bosch.png" alt="Бош">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/hp.png" alt="Хп">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/aser.png" alt="Асер">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/sony.png" alt="Сони">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/lenovo.png" alt="Леново">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/samsung.png" alt="Самсунг">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt=""></a>
-        </swiper-slide>
-        <swiper-slide class="cards-brends__swiper-slide swiper-slide">
-          <img src="img/brends/apple.png" alt="Яблоко">
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-      </swiper-container>
-    </section>
-    <section class="cards-tech cards">
-      <h2 class="cards-tech__title title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
-      <div class="cards-tech__container cards__container">
-        <div class="cards-tech__main cards__main">
-          <div class="cards-tech__item cards__item">
+        <swiper-container slides-per-view="auto" pagination="true" loop="true" space-between="16" class="cards-tech__swiper-container swiper-container">
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт ноутбуков</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт планшетов</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт ПК</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт мониторов</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт чего-то</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт чего-то</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт чего-то</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт чего-то</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт чего-то</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт чего-то</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-tech__item cards__item">
+          </swiper-slide>
+          <swiper-slide class="cards-tech__swiper-slide swiper-slide">
             <p class="cards-tech__text cards__text">Ремонт чего-то</p>
             <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
+          </swiper-slide>
+        </swiper-container>
+      </section>
+      <section class="cards-price cards">
+        <h2 class="cards-price__title title">Цены на услуги</h2>
+        <div class="cards-price__container cards__container">
+          <div class="cards-price__main cards__main">
+            <div class="cards-price__item cards__item">
+              <p class="cards-price__text cards__text">Ремонтные услуги</p>
+              <p class="cards-price__text cards__text">Цена</p>
+              <p class="cards-price__text cards__text">Срок</p>
+            </div>
+            <div class="cards-price__item cards__item">
+              <p class="cards-price__text cards__text">Диагностика</p>
+              <p class="cards-price__text cards__text">Бесплатно</p>
+              <p class="cards-price__text cards__text">30 минут</p>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </div>
+            <div class="cards-price__item cards__item">
+              <p class="cards-price__text cards__text">Замена дисплея</p>
+              <p class="cards-price__text cards__text">1000р</p>
+              <p class="cards-price__text cards__text">30-120 мин</p>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </div>
+            <div class="cards-price__item cards__item">
+              <p class="cards-price__text cards__text">Замена полифонического динамика</p>
+              <p class="cards-price__text cards__text">1000р</p>
+              <p class="cards-price__text cards__text">30-120 мин</p>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </div>
+            <div class="cards-price__item cards__item">
+              <p class="cards-price__text cards__text">Тестирование с выдачей технического заключения</p>
+              <p class="cards-price__text cards__text">1000р</p>
+              <p class="cards-price__text cards__text">30-120 мин</p>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </div>
+            <div class="cards-price__item cards__item">
+              <p class="cards-price__text cards__text">Замена програмного обеспечения</p>
+              <p class="cards-price__text cards__text">1000р</p>
+              <p class="cards-price__text cards__text">30-120 мин</p>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </div>
           </div>
         </div>
-        <button type="button" class="cards-tech__read-more read-more">Показать все</button>
-      </div>
-      <swiper-container slides-per-view="auto" pagination="true" loop="true" space-between="16" class="cards-tech__swiper-container swiper-container">
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт ноутбуков</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт планшетов</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт ПК</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт мониторов</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт чего-то</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт чего-то</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт чего-то</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт чего-то</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт чего-то</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт чего-то</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-        <swiper-slide class="cards-tech__swiper-slide swiper-slide">
-          <p class="cards-tech__text cards__text">Ремонт чего-то</p>
-          <a href="#" target="_blank"><img src="img/brends/go.svg" alt="Ссылка вперед"></a>
-        </swiper-slide>
-      </swiper-container>
-    </section>
-    <section class="cards-price cards">
-      <h2 class="cards-price__title title">Цены на услуги</h2>
-      <div class="cards-price__container cards__container">
-        <div class="cards-price__main cards__main">
-          <div class="cards-price__item cards__item">
-            <p class="cards-price__text cards__text">Ремонтные услуги</p>
-            <p class="cards-price__text cards__text">Цена</p>
-            <p class="cards-price__text cards__text">Срок</p>
-          </div>
-          <div class="cards-price__item cards__item">
-            <p class="cards-price__text cards__text">Диагностика</p>
-            <p class="cards-price__text cards__text">Бесплатно</p>
-            <p class="cards-price__text cards__text">30 минут</p>
-            <a href="#" target="_blank" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-price__item cards__item">
-            <p class="cards-price__text cards__text">Замена дисплея</p>
-            <p class="cards-price__text cards__text">1000р</p>
-            <p class="cards-price__text cards__text">30-120 мин</p>
-            <a href="#" target="_blank" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-price__item cards__item">
-            <p class="cards-price__text cards__text">Замена полифонического динамика</p>
-            <p class="cards-price__text cards__text">1000р</p>
-            <p class="cards-price__text cards__text">30-120 мин</p>
-            <a href="#" target="_blank" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-price__item cards__item">
-            <p class="cards-price__text cards__text">Тестирование с выдачей технического заключения</p>
-            <p class="cards-price__text cards__text">1000р</p>
-            <p class="cards-price__text cards__text">30-120 мин</p>
-            <a href="#" target="_blank" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </div>
-          <div class="cards-price__item cards__item">
-            <p class="cards-price__text cards__text">Замена програмного обеспечения</p>
-            <p class="cards-price__text cards__text">1000р</p>
-            <p class="cards-price__text cards__text">30-120 мин</p>
-            <a href="#" target="_blank" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </div>
+        <swiper-container slides-per-view="auto" pagination="true" loop="true" space-between="16" class="cards-price__swiper-container swiper-container">
+          <swiper-slide class="cards-price__swiper-slide swiper-slide">
+            <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Диагностика</p>
+            <p class="cards-price__text cards__text"><span class="cards__text_grey">Цена</span><br>Бесплатно</p>
+            <p class="cards-price__text cards-price__text_swiper cards__text">
+              <span><span class="cards__text_grey">Срок</span><br>30 минут</span>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </p>
+          </swiper-slide>
+          <swiper-slide class="cards-price__swiper-slide swiper-slide">
+            <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Замена дисплея</p>
+            <p class="cards-price__text cards__text"><span class="cards__text_grey">Цена</span><br>1000р</p>
+            <p class="cards-price__text cards-price__text_swiper cards__text">
+              <span><span class="cards__text_grey">Срок</span><br>30-120 мин</span>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </p>
+          </swiper-slide>
+          <swiper-slide class="cards-price__swiper-slide swiper-slide">
+            <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Замена полифонического динамика</p>
+            <p class="cards-price__text cards__text"><span class="cards__text_grey">Цена</span><br>1000р</p>
+            <p class="cards-price__text cards-price__text_swiper cards__text">
+              <span><span class="cards__text_grey">Срок</span><br>30-120 мин</span>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </p>
+          </swiper-slide>
+          <swiper-slide class="cards-price__swiper-slide swiper-slide">
+            <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Тестирование с выдачей технического заключения</p>
+            <p class="cards-price__text cards__text"><span class="cards__text_grey">Цена</span><br>1000р</p>
+            <p class="cards-price__text cards-price__text_swiper cards__text">
+              <span><span class="cards__text_grey">Срок</span><br>30-120 мин</span>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </p>
+          </swiper-slide>
+          <swiper-slide class="cards-price__swiper-slide swiper-slide">
+            <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Замена програмного обеспечения</p>
+            <p class="cards-price__text cards__text"><span class="cards__text_grey"><span class="cards__text_grey">Срок</span><br>Цена</span><br>1000р</p>
+            <p class="cards-price__text cards-price__text_swiper cards__text">
+              <span><span class="cards__text_grey">Срок</span><br>30-120 мин</span>
+              <button type="button" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></button>
+            </p>
+          </swiper-slide>
+        </swiper-container>
+        <div class="cards-price__footer">
+          <p class="cards-price__text-footer">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+          <button type="button" class="cards-price__link-footer">Получить коммерческое предложение <img src="img/logo/Line.svg" alt=""></button>
         </div>
-      </div>
-      <swiper-container slides-per-view="auto" pagination="true" loop="true" space-between="16" class="cards-price__swiper-container swiper-container">
-        <swiper-slide class="cards-price__swiper-slide swiper-slide">
-          <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Диагностика</p>
-          <p class="cards-price__text cards__text"><span class="cards__text_grey">Цена</span><br>Бесплатно</p>
-          <p class="cards-price__text cards-price__text_swiper cards__text">
-            <span><span class="cards__text_grey">Срок</span><br>30 минут</span>
-            <a href="#" target="_blank" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </p>
-        </swiper-slide>
-        <swiper-slide class="cards-price__swiper-slide swiper-slide">
-          <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Замена дисплея</p>
-          <p class="cards-price__text cards__text"><span class="cards__text_grey">Цена</span><br>1000р</p>
-          <p class="cards-price__text cards-price__text_swiper cards__text">
-            <span><span class="cards__text_grey">Срок</span><br>30-120 мин</span>
-            <a href="#" target="_blank" class=" botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </p>
-        </swiper-slide>
-        <swiper-slide class="cards-price__swiper-slide swiper-slide">
-          <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Замена полифонического динамика</p>
-          <p class="cards-price__text cards__text"><span class="cards__text_grey">Цена</span><br>1000р</p>
-          <p class="cards-price__text cards-price__text_swiper cards__text">
-            <span><span class="cards__text_grey">Срок</span><br>30-120 мин</span>
-            <a href="#" target="_blank" class=" botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </p>
-        </swiper-slide>
-        <swiper-slide class="cards-price__swiper-slide swiper-slide">
-          <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Тестирование с выдачей технического заключения</p>
-          <p class="cards-price__text cards__text"><span class="cards__text_grey">Цена</span><br>1000р</p>
-          <p class="cards-price__text cards-price__text_swiper cards__text">
-            <span><span class="cards__text_grey">Срок</span><br>30-120 мин</span>
-            <a href="#" target="_blank" class=" botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </p>
-        </swiper-slide>
-        <swiper-slide class="cards-price__swiper-slide swiper-slide">
-          <p class="cards-price__text cards__text"><span class="cards__text_grey">Ремонтные услуги</span><br>Замена програмного обеспечения</p>
-          <p class="cards-price__text cards__text"><span class="cards__text_grey"><span class="cards__text_grey">Срок</span><br>Цена</span><br>1000р</p>
-          <p class="cards-price__text cards-price__text_swiper cards__text">
-            <span><span class="cards__text_grey">Срок</span><br>30-120 мин</span>
-            <a href="#" target="_blank" class="botton-pink">Заказать<img src="img/logo/goside.svg" alt="Ссылка вперед"></a>
-          </p>
-        </swiper-slide>
-      </swiper-container>
-      <div class="cards-price__footer">
-        <p class="cards-price__text-footer">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-        <a href="" class="cards-price__link-footer">Получить коммерческое предложение <img src="img/logo/Line.svg" alt=""></a>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__container">
-        <p class="footer__text">© 2019<br> CPSРазработано командой Apesong </p>
-        <p class="footer__text">Политика конфиденциальности</p>
-        <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
-      </div>
-    </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-  <script src="index.js"></script>
-</body>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="footer__text">© 2019<br> CPSРазработано командой Apesong </p>
+          <p class="footer__text">Политика конфиденциальности</p>
+          <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 
 </html>
